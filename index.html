@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        header {
+            display: flex;
+            background-color: rgb(240, 179, 189);
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            margin-top: 20px;
+
+        }
+
+        .logo {
+            width: 70px;
+            height: 50px;
+            padding: 16px;
+        }
+
+        nav>ul {
+            display: flex;
+            list-style: none
+        }
+
+        nav>ul>li {
+            margin:0px 10px;
+            background-color: white;
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        /* @media only screen and(max-width:535px){
+            nav>ul>li{
+                padding: 10px 10px;
+            }   
+        } */
+        @media only screen and (max-width:375px){
+            nav>ul>li{
+                padding: 2px 3px;
+                margin: 3px;
+        }}
+
+        section {
+            background-color: rgb(240, 179, 189);
+            margin-top: 15px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+
+        }
+        .sec-right{
+            margin-left: 20px; 
+            max-width: 250px;
+            
+        }
+        @media only screen and (max-width:600px) {
+            .sec-right{display: none;}
+
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img class="logo"
+                src="https://www.freepnglogos.com/uploads/photography-logo-png/photography-logo-dave-wall-photographer-educator-retoucher-digital-4.png"
+                alt="">
+        </div>
+        <nav class="right">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Gallery</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="sec-left">
+            <h1>Paragraph 01</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquam repudiandae fugiat, accusamus
+                iste quod illum, voluptate amet sit error ipsum autem veniam excepturi voluptatibus dolore ea enim neque
+                </p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquam repudiandae fugiat, accusamus
+                    iste quod illum, voluptate amet sit error ipsum autem veniam excepturi voluptatibus dolore ea enim neque
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquam repudiandae fugiat, accusamus
+                        iste quod illum, voluptate amet sit error ipsum autem veniam excepturi voluptatibus dolore ea enim neque
+                        </p>
+
+        </div>
+        <div class="sec-right">
+            <h2>Notes:</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquam repudiandae fugiat, accusamus
+                iste quod illum, voluptate amet sit error ipsum autem veniam excepturi voluptatibus dolore ea enim neque
+                </p>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
